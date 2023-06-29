@@ -1,0 +1,207 @@
+/* selectores de etiqueta*/
+
+h1{
+    font: 30px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+h1,h2,h3{
+    margin-bottom: 10px;
+}
+
+body{
+    background-image: url(../img/backround\ 2.jpg);
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+/* selector descendente */
+
+nav{
+    background-color: deepskyblue;
+    padding: 6px 15px;
+     position: sticky;
+     top: 0;
+     left: 0;
+     width: 98%;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: column;
+    align-items: end;
+ }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+     }
+       nav ul li{
+        /* margin */
+        margin-right: 10px;
+       }
+    
+
+            nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.6rem;
+            }
+
+footer{
+    background-color: deepskyblue;
+ }
+
+h1,
+h2,
+h3,
+form label{
+    color: black;
+    font-size: 1.4rem;
+    display: block;
+    }
+
+    main{
+        padding: 20px 30px;
+    }
+p{
+     color: black;
+     font-weight: 300;
+     font-size: 20px;
+     line-height: 24px;   
+     /* font-style: italic */
+}
+
+/* selector de clase */
+     .bg-deepskyblue{
+        background-color: deepskyblue;
+     }
+
+     
+     .text-center{
+        text-align: center;
+     }
+     .text-left{
+        text-align: left;
+     }
+     .text-right{
+        text-align: right;
+     }
+     .contenedor{
+        background-color: rgb(156, 229, 253);
+        width: 8%;
+     }
+
+     /* Servicios */
+
+     .Servicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+     }
+
+     .Servicios figure{
+        width: 14,5%;
+        background-color: deepskyblue;
+     }
+     
+
+     .Servicios figure figcaption{
+        color: black;
+        font-size: 1.5em;  
+     }
+
+     .Contacto{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .Contacto figure{
+      width: 14,5%;
+      background-color: deepskyblue;
+   }
+   
+
+   .Contacto figure figcaption{
+      color: black;
+      font-size: 1.5em;  
+   }
+
+   .trabajos{
+      display: grid;
+      grid-template-columns: 20% repeat(4,1fr);
+      grid-template-rows: 80px repeat(2, 300px);
+      gap: 5px;
+      grid-template-areas: "actions actions actions"
+      "filters serv1 serv1"
+      "filters serv2 serv3"
+      "filters serv4 serv5";
+   }
+
+   .trabajos .title{
+      grid-row: 1/2;
+      grid-column: 1/6;
+   }
+
+   .trabajos .filters{
+     grid-column: 1/2;
+     grid-row: 2/4;
+   }
+
+   .trabajos .serv1{
+     grid-column: 1/2;
+     grid-row: 1/2;
+   }
+
+   .trabajos .serv2{
+     grid-column: 2/3;
+     grid-row: 1/2;
+   }
+
+   .trabajos .serv3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+   }
+
+   .trabajos .serv4{
+      grid-column: 4/5;
+      grid-row: 1/2;
+   }
+      
+
+   .trabajos .serv5{
+      grid-column: 5/6;
+      grid-row: 1/2;
+   }
+
+   .bg-skyblue{ 
+      border-radius: 10px;
+      background-color: skyblue;
+   }
+
+   .turnos{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .turnos figure{
+      width: 14,5%;
+      background-color: deepskyblue;
+   }
+   
+
+   .turnos figure figcaption{
+      color: black;
+      font-size: 1.5em;  
+   }
